@@ -4,7 +4,7 @@ import compose from "koa-compose"
 
 export const me = compose([
     async (ctx: Context) => {
-      console.log('getUser');
+      console.log('graphql');
       const result = await getUser.execute({
         userId: 111,
         deviceId: "testDeviceId"
